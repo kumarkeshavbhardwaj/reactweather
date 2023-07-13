@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@200;400;800&family=Ysabeau+Infant:wght@1;500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Belanosima', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    /* display: flex; */
+    background: url(../img/bg.jpg) no-repeat center center fixed;
+    background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-container{
+    height: 100px;
+    display: flex;
+    margin-left: 40%;
+    width: 20%;
+    margin-top: 7%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+input{
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+    margin-top: 20%;
+    height: 40%;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.25);
+    transition: .3s;
 }
-
-.App-link {
-  color: #61dafb;
+input:hover{
+    transform: scale(1.2);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card{
+    border-radius: 5px;
+    height: 360px;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.06);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.3);
+    color: #fcfcfc;
+}
+h4{
+    letter-spacing: 4px;
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+h6{
+    text-align: center;
+    color: #b3b3b3;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+h1{
+     text-align: center;
+     letter-spacing: 2px;
+     color: white;
+}
+.container{
+    height: 50%;
+    margin-top: 20%;
+    margin-left: 15%;
+    font-size: 1.4rem;
+    align-items: center;
+    width: 70%;
+    color: #b3b3b3;
+    display: flex;
+    justify-content: space-around;
+}
+.details{
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.details:first-child{
+    padding-right: 19%;
+    border-right: 2px solid #fcfcfc;
 }
